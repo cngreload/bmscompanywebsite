@@ -87,7 +87,7 @@ const Feature = ( {
         <div className="flex flex-col p-6 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-300 dark:bg-neutral-800 dark:text-neutral-100">
             {/* Icon */ }
             { icon && (
-                <div className="text-blue-500 dark:text-blue-400 text-3xl mb-4">
+                <div className="text-purple-600 dark:text-purple-600 text-3xl mb-4">
                     { icon }
                 </div>
             ) }
@@ -96,7 +96,7 @@ const Feature = ( {
             <h3 className="text-lg sm:text-xl font-bold mb-2">{ title }</h3>
 
             {/* Description */ }
-            <p className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+            <p className="text-sm sm:text-base text-neutral-800 dark:text-neutral-300 leading-relaxed">
                 { description }
             </p>
         </div>

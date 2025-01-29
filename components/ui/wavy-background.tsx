@@ -51,7 +51,7 @@ export const WavyBackground = ( {
     }, [ speed ] );
 
     const waveColors = useMemo(
-        () => colors ?? [ "#ff33cc", "#009900", "#e879f9", "#000000", "#00ffff" ],
+        () => colors ?? [ "#e600ac", "#009900", "#cc33ff", "#000000" ],
         [ colors ]
     );
 

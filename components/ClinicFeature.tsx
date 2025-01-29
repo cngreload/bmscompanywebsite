@@ -85,9 +85,9 @@ const Feature = ( {
                 "dark:bg-neutral-800 dark:text-neutral-100"
             ) }
         >
-            <div className="mb-4 text-blue-500 dark:text-blue-400 text-3xl">{ icon }</div>
+            <div className="mb-4 text-purple-600 dark:text-purple-400 text-3xl">{ icon }</div>
             <h3 className="text-lg sm:text-xl font-bold mb-2">{ title }</h3>
-            <p className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300">
+            <p className="text-sm sm:text-base text-neutral-800 dark:text-neutral-300">
                 { description }
             </p>
         </div>
