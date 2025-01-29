@@ -11,6 +11,7 @@ import CNGIntro from "../components/CNGIntro";
 import Story from "@/components/Story";
 import { StickyScrollReveal } from "@/components/AboutUs";
 import Footer from "../components/Footer";
+import { BentoGridMedia } from '@/components/Media';
 
 export default function Home ()
 {
@@ -28,6 +29,7 @@ export default function Home ()
         <ICTSIntro />
         <CNGIntro />
         <Story />
+        <BentoGridMedia />
         <StickyScrollReveal />
       </main>
       <Footer />
