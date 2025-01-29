@@ -26,7 +26,7 @@ export function FirstModal ()
             <Image src="/png/irmap.png" alt="alt" width={ 40 } height={ 40 } />
           </div>
         </ModalTrigger>
-        <ModalBody className='h-fit dark:bg-slate-50 dark:text-white'>
+        <ModalBody className='h-fit dark:bg-slate-50 dark:text-black'>
           <ModalContent>
             <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
               مصوبه هیـیت وزیران  💡
