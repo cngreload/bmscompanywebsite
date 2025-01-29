@@ -1,5 +1,6 @@
 import React from "react";
 import { SparklesButton } from "./SparkButton";
+import Link from "next/link";
 
 const ClinicianText: React.FC = () =>
 {
@@ -11,9 +12,9 @@ const ClinicianText: React.FC = () =>
                 <br />
                 چه یک مدیر کلینیک باشید که به دنبال رشد و مدیریت بهتر است یا یک کاربر که به خدمات حرفه‌ای و قابل‌اعتماد نیاز دارد، کلینیکنز همراه مطمئن شماست.
             </p>
-            <a href="https://clinicans.ir/">
+            <Link href="https://clinicans.ir/">
                 <SparklesButton />
-            </a>
+            </Link>
         </div>
     );
 };
