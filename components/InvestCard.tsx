@@ -11,12 +11,12 @@ export function CardSpotlightDemo ()
             </q>
 
             {/* Description */ }
-            <p className="text-sm sm:text-base md:text-lg text-gray-700 mt-4 relative z-20 text-center">
+            <p className="text-sm sm:text-base md:text-lg text-black mt-4 relative z-20 text-center">
                 توسعه فرصت حذف و جایگزینی محصولات خارجی قدیمی با محصولی بومی و پیشتاز
             </p>
 
             {/* Steps */ }
-            <div className="text-gray-800 mt-6 relative z-20">
+            <div className="text-black mt-6 relative z-20">
                 <p className="text-center font-semibold mb-4">
                     در صورت علاقه به ورود به دنیای فناوری هوشمند، شامل:
                 </p>
@@ -48,7 +48,7 @@ const Step = ( { title }: { title: string; } ) =>
     return (
         <li className="flex gap-2 items-start">
             <CheckIcon />
-            <p className="text-sm sm:text-base md:text-lg text-gray-800">{ title }</p>
+            <p className="text-sm sm:text-base md:text-lg text-black">{ title }</p>
         </li>
     );
 };

@@ -9,7 +9,7 @@ const CliniciansBenefits: React.FC = () =>
     const [ activeTab, setActiveTab ] = useState<string | null>( null ); // No tab active initially
 
     return (
-        <div className="relative bg-slate-300 text-black py-16 px-4 md:px-8 lg:px-12 flex flex-col items-center text-center overflow-x-hidden">
+        <div className="relative bg-gradient-to-bottom  text-black py-16 px-4 md:px-8 lg:px-12 flex flex-col items-center text-center overflow-x-hidden">
             {/* Header Section */ }
             <div className="text-center p-6 lg:p-10">
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">

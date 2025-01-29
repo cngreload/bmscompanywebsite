@@ -26,6 +26,10 @@ module.exports = {
           '50%': { boxShadow: '0 0 100px 30px rgba(255, 223, 0, 0.2)' },
         },
       },
+      backgroundImage: {
+        'gradient-to-bottom':
+          'linear-gradient(to bottom, #00ff00 0%, #ffffff 100%)',
+      },
     },
   },
   plugins: [],
