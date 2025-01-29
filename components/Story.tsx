@@ -8,7 +8,7 @@ import { ThirdModal } from "./ThirdModal";
 const Story: React.FC = () =>
 {
     return (
-        <section className="w-full px-4 py-6 md:py-8 lg:py-10 overflow-x-hidden">
+        <section id="story" className="w-full px-4 py-6 md:py-8 lg:py-10 overflow-x-hidden">
             {/* Title */ }
             <p className=" text-center text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extrabold py-4 rounded-md">
                 ظهور سامانه نوین : نوید احیای طرحی ملی

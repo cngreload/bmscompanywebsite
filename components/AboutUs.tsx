@@ -68,6 +68,27 @@ const content = [
         ),
     },
     {
+        title: "ما تمام تخم‌مرغ‌هایمان را در یک سبد نگذاشتیم... یا شاید گذاشتیم، اما این تخم‌مرغ، تخم اژدهاست! ",
+        description: (
+            <div className="h-full w-full bg-gradient-to-br from-orange-500 to-red-800 flex items-center justify-center text-white p-4 text-sm sm:text-base md:text-lg lg:text-xl">
+                <p>
+                    بدون هیچ ارتباطی با دولت یا اشخاص پرنفوذ، و بودجه محدود، کاری را انجام دادیم که شرکت‌های بزرگ سال‌ها از انجام آن ناتوان بودند. ما در حال شکستن سقف شیشه‌ای فساد و رانت‌خواری‌ای هستیم که بر اقتصاد تحمیل شده است. ما درها را برای کارآفرینان واقعی باز می‌کنیم، نه برای بچه‌های پولدار و رانتی!
+                </p>
+            </div>
+        ),
+        content: (
+            <div className="flex justify-center">
+                <Image
+                    src="/png/industry4.png"
+                    width={ 300 }
+                    height={ 300 }
+                    className="object-cover rounded-md"
+                    alt="Optimized Energy"
+                />
+            </div>
+        ),
+    },
+    {
         title: "چرا ما؟",
         description: (
             <div className="h-full w-full bg-gradient-to-br from-orange-500 to-red-800 flex items-center justify-center text-white p-4 text-sm sm:text-base md:text-lg lg:text-xl">
@@ -79,7 +100,7 @@ const content = [
         content: (
             <div className="flex justify-center">
                 <Image
-                    src="/png/irmap.png"
+                    src="/png/handshake.png"
                     width={ 300 }
                     height={ 300 }
                     className="object-cover rounded-md"

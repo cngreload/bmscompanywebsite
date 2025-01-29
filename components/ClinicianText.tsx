@@ -11,7 +11,9 @@ const ClinicianText: React.FC = () =>
                 <br />
                 چه یک مدیر کلینیک باشید که به دنبال رشد و مدیریت بهتر است یا یک کاربر که به خدمات حرفه‌ای و قابل‌اعتماد نیاز دارد، کلینیکنز همراه مطمئن شماست.
             </p>
-            <SparklesButton />
+            <a href="https://clinicans.ir/">
+                <SparklesButton />
+            </a>
         </div>
     );
 };

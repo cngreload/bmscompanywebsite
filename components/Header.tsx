@@ -44,13 +44,19 @@ const Header: React.FC = () =>
                     درباره ما
                 </a>
                 <a
+                    href="#story"
+                    className="text-gray-800 hover:text-blue-500 focus:text-blue-500 font-medium transition-colors duration-200"
+                >
+                    طرح ملی
+                </a>
+                <a
                     href="#media"
                     className="text-gray-800 hover:text-blue-500 focus:text-blue-500 font-medium transition-colors duration-200"
                 >
                     رسانه
                 </a>
                 <a
-                    href="#contactus"
+                    href="#email"
                     className="text-gray-800 hover:text-blue-500 focus:text-blue-500 font-medium transition-colors duration-200"
                 >
                     تماس با ما

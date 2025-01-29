@@ -30,7 +30,7 @@ export function CardSpotlightDemo ()
             </div>
 
             {/* Contact Info */ }
-            <a href="bmsco2020@gmail.com">
+            <a href="#email">
                 <p className="text-lg sm:text-xl md:text-2xl font-extrabold relative z-20 text-center mt-6">
                     آغاز مکاتبه با ما:
                 </p>

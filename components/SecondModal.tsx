@@ -21,7 +21,7 @@ export function SecondModal ()
       <Modal>
         <ModalTrigger className=" dark:text-white text-black  flex justify-center group/modal-btn">
           <span className="group-hover/modal-btn:translate-x-40 text-center text-lg md:text-2xl bg-white  p-10 rounded-xl rounded-r-full transition duration-200">
-            مصوبه <br /> وزیران          </span>
+            پدافند <br />غیر عامل          </span>
           <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
             <Image src="/png/padlogo.png" alt="لوگو پدافند" width={ 40 } height={ 40 } />
           </div>
@@ -29,8 +29,8 @@ export function SecondModal ()
         <ModalBody className='h-fit'>
           <ModalContent>
             <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
-              مصوبه هیـیت وزیران  💡
-              <p className="text-green-600 text-sm">طرحی برای ارتقا توان صنعت سی ان جی!!</p>
+              پدافند غیر عامل  💡
+              <p className="text-green-600 text-sm">تاکید بر امنیت ملی و تکیه بر توان داخلی</p>
             </h4>
             <div className="flex justify-center items-center">
               { images.map( ( image, idx ) => (
