@@ -17,6 +17,9 @@ export default function RootLayout ( {
 {
   return (
     <html lang="en" dir="rtl">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={ `${ vazirmatn.className } overflow-auto w-screen max-w-full` }
       >

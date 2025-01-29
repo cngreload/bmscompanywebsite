@@ -26,7 +26,7 @@ export function SecondModal ()
             <Image src="/png/padlogo.png" alt="لوگو پدافند" width={ 40 } height={ 40 } />
           </div>
         </ModalTrigger>
-        <ModalBody className='h-fit'>
+        <ModalBody className='h-fit  dark:bg-slate-50 dark:text-white'>
           <ModalContent>
             <h4 className="text-base lg:text-2xl text-gray-900 dark:text-gray-800 font-bold text-center mb-8">
               پدافند غیر عامل  💡

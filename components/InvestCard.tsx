@@ -4,7 +4,7 @@ import { MdAlternateEmail } from "react-icons/md";
 export function CardSpotlightDemo ()
 {
     return (
-        <CardSpotlight className="h-auto w-full max-w-md p-6 md:p-8 rounded-lg shadow-lg bg-white relative">
+        <CardSpotlight className="h-auto w-full max-w-md p-6 md:p-8 rounded-lg shadow-lg dark:bg-slate-50 dark:text-black  bg-white relative">
             {/* Title */ }
             <q className="text-lg sm:text-xl md:text-2xl font-bold relative z-20 mt-2 text-black block text-center">
                 فرصت سرمایه گذاری
