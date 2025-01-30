@@ -28,7 +28,7 @@ export function FirstModal ()
         </ModalTrigger>
         <ModalBody className='h-fit dark:bg-slate-50 dark:text-black'>
           <ModalContent>
-            <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
+            <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8 bg-white dark:bg-purple-600">
               مصوبه هیـیت وزیران  💡
               <p className="text-green-600 text-sm">طرحی برای ارتقا توان صنعت سی ان جی!!</p>
             </h4>

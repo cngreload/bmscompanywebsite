@@ -1,4 +1,3 @@
-// components/ui/tracing-beam.tsx
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useTransform, useScroll, useSpring } from "framer-motion";
@@ -8,10 +7,9 @@ interface TracingBeamProps
 {
     children: React.ReactNode;
     className?: string;
-    isDark: boolean;
 }
 
-export const TracingBeam: React.FC<TracingBeamProps> = ( { children, className, isDark } ) =>
+export const TracingBeam: React.FC<TracingBeamProps> = ( { children, className } ) =>
 {
     const ref = useRef<HTMLDivElement>( null );
     const { scrollYProgress } = useScroll( {
@@ -21,6 +19,7 @@ export const TracingBeam: React.FC<TracingBeamProps> = ( { children, className, 
 
     const contentRef = useRef<HTMLDivElement>( null );
     const [ svgHeight, setSvgHeight ] = useState( 0 );
+    const [ isScrolled, setIsScrolled ] = useState( false );
 
     useEffect( () =>
     {
@@ -28,6 +27,28 @@ export const TracingBeam: React.FC<TracingBeamProps> = ( { children, className, 
         {
             setSvgHeight( contentRef.current.offsetHeight );
         }
+    }, [] );
+
+    useEffect( () =>
+    {
+        const handleScroll = () =>
+        {
+            if ( window.scrollY > 100 )
+            {
+                setIsScrolled( true );
+            } else
+            {
+                setIsScrolled( false );
+            }
+        };
+
+        window.addEventListener( 'scroll', handleScroll );
+
+        // Cleanup the event listener on component unmount
+        return () =>
+        {
+            window.removeEventListener( 'scroll', handleScroll );
+        };
     }, [] );
 
     const y1 = useSpring(
@@ -45,17 +66,13 @@ export const TracingBeam: React.FC<TracingBeamProps> = ( { children, className, 
         }
     );
 
-    const themeClasses = isDark
-        ? "bg-black text-white"
-        : "bg-white text-black";
-
     return (
         <motion.div
             ref={ ref }
             className={ cn(
-                "relative w-full max-w-4xl mx-auto h-screen",
+                "relative w-full max-w-4xl mx-auto h-full",
                 className,
-                themeClasses
+                isScrolled ? "bg-red-400 text-white" : "bg-indigo-400"
             ) }
         >
             <div className="absolute -left-4 md:-left-20 top-3">
@@ -67,7 +84,7 @@ export const TracingBeam: React.FC<TracingBeamProps> = ( { children, className, 
                                 ? "none"
                                 : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
                     } }
-                    className="ml-[27px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
+                    className="ml-[27px] h-4 w-4 rounded-full border border-neutral-200 shadow-sm flex items-center justify-center"
                 >
                     <motion.div
                         transition={ { duration: 0.2, delay: 0.5 } }
@@ -92,7 +109,7 @@ export const TracingBeam: React.FC<TracingBeamProps> = ( { children, className, 
                     <motion.path
                         d={ `M 1 0V -36 l 18 24 V ${ svgHeight * 0.8 } l -18 24V ${ svgHeight }` }
                         fill="none"
-                        stroke={ isDark ? "#4A4A4A" : "#9091A0" }
+                        stroke={ isScrolled ? "#9091A0" : "#4A4A4A" }
                         strokeOpacity="0.16"
                         transition={ { duration: 10 } }
                     ></motion.path>

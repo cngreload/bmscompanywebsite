@@ -165,8 +165,7 @@ const items = [
         title: "پادکست",
         description: (
             <span className="text-sm">
-                داستان شرکت به روایت دیالوگ
-            </span>
+                داستان شرکت به روایت صدا            </span>
         ),
         header: (
 

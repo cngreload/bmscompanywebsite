@@ -1,38 +1,56 @@
 "use client";
-import React from "react";
-import Image from "next/image";
 import { TracingBeam } from "@/components/ui/tracing-beam";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
+import React, { useState, useEffect } from "react";
 
 interface TracingbeamProps
 {
-    isDark: boolean;
+    className?: string;
 }
 
-export function Tracingbeam ( { isDark }: TracingbeamProps )
+export function Tracingbeam ( { className }: TracingbeamProps )
 {
-    const themeClasses = isDark
-        ? "bg-black text-white"
-        : "bg-white text-black";
+    const [ isScrolled, setIsScrolled ] = useState( false );
+
+    useEffect( () =>
+    {
+        const handleScroll = () =>
+        {
+            if ( window.scrollY > 100 )
+            {
+                setIsScrolled( true );
+            } else
+            {
+                setIsScrolled( false );
+            }
+        };
+
+        window.addEventListener( 'scroll', handleScroll );
+
+        // Cleanup the event listener on component unmount
+        return () =>
+        {
+            window.removeEventListener( 'scroll', handleScroll );
+        };
+    }, [] );
 
     return (
-        <TracingBeam className="px-6" isDark={ isDark }>
+        <TracingBeam className={ cn( "px-6", className, isScrolled ? "bg-black text-white" : "bg-white text-black" ) }>
             <div className="max-w-2xl mx-auto antialiased pt-4 relative">
                 { Content.map( ( item, index ) => (
                     <div key={ `content-${ index }` } className="mb-10">
                         <h2
                             className={ cn(
                                 "rounded-full text-sm w-fit px-4 py-1 mb-4",
-                                themeClasses
+                                isScrolled ? "bg-emerald-500 text-white" : "bg-gray-100 text-emerald-600"
                             ) }
                         >
                             { item.badge }
                         </h2>
-
                         <p className="text-xl mb-4">
                             { item.title }
                         </p>
-
                         <div className="text-sm prose prose-sm dark:prose-invert">
                             { item?.image && (
                                 <Image
@@ -202,7 +220,7 @@ const Content = [
                     خبرنگار: در پایان، اگر پیامی برای مسئولان، سرمایه‌گذاران یا مردم دارید، لطفاً بیان کنید.
                     <br />
                     <br />
-                    امیر محنتی: 📌 به فناوری‌های بومی اعتماد کنید. ما در کشور توانایی توسعه راهکارهای پیشرفته را داریم، اما برای موفقیت، نیاز به همکاری و حمایت داریم.
+                    امیر محنتی: <br /> 📌 به فناوری‌های بومی اعتماد کنید. ما در کشور توانایی توسعه راهکارهای پیشرفته را داریم، اما برای موفقیت، نیاز به همکاری و حمایت داریم.
                     <br />
                     📌 سرمایه‌گذاران، آینده را درک کنید. فناوری‌های ما نه‌تنها اقتصادی، بلکه تحولی برای زندگی خواهند بود.
                     <br />

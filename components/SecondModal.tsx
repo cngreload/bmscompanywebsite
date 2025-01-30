@@ -28,7 +28,7 @@ export function SecondModal ()
         </ModalTrigger>
         <ModalBody className='h-fit  dark:bg-slate-50 dark:text-black'>
           <ModalContent>
-            <h4 className="text-base lg:text-2xl text-gray-900 dark:text-gray-800 font-bold text-center mb-8">
+            <h4 className="text-base lg:text-2xl bg-white dark:bg-purple-600 text-gray-900 dark:text-gray-800 font-bold text-center mb-8">
               پدافند غیر عامل  💡
               <p className="text-green-600 text-sm">تاکید بر امنیت ملی و تکیه بر توان داخلی</p>
             </h4>
