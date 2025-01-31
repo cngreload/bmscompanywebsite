@@ -15,7 +15,7 @@ export default function Home ()
             "w-screen max-w-full px-4 md:px-8"
         ) }>
             <Headerinterview />
-            <main className="space-y-16 h-full">
+            <main className="space-y-16 lg:h-screen md:screen h-full">
                 <Tracingbeam />
             </main>
             <Footer />

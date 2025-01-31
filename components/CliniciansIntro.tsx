@@ -17,9 +17,9 @@ const CliniciansIntro: React.FC = () =>
                 <Image
                     src="/png/irmap.png"
                     alt="نقشه ایران زمین"
-                    height={ 500 }
-                    width={ 500 }
-                    className="max-w-full h-auto"
+                    height={ 400 }
+                    width={ 400 }
+                    className="max-w-full h-auto rounded-sm"
                 />
             </div>
         </section>

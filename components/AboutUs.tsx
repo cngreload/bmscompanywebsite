@@ -118,7 +118,7 @@ export function StickyScrollReveal ()
             <p className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
                 درباره ما
             </p>
-            <div className="p-6 sm:p-10 bg-purple-950 opacity-90 rounded-lg">
+            <div className="p-6 sm:p-10 bg-purple-800 opacity-90 rounded-lg">
                 <StickyScroll content={ content } />
             </div>
         </div>

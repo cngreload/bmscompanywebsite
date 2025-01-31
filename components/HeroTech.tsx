@@ -198,4 +198,4 @@ const ThreeCircleTech: React.FC = () =>
     );
 };
 
-export default ThreeCircleTech;
+export default ThreeCircleTech; 

@@ -4,7 +4,7 @@ import { SparklesCore } from "./ui/sparkles";
 export function SparklesButton ()
 {
     return (
-        <div className="relative h-16 w-48 bg-white rounded-md flex items-center justify-center overflow-hidden group cursor-pointer">
+        <div className="relative items-center h-16 w-48 bg-white rounded-md flex justify-center overflow-hidden group cursor-pointer">
             {/* Button Text */ }
             <h1 className="text-2xl font-bold text-green-600 z-10">
                 ورود به کلینیکانز
@@ -16,7 +16,7 @@ export function SparklesButton ()
                     background="transparent"
                     minSize={ 0.5 }
                     maxSize={ 2 }
-                    particleDensity={ 200 }
+                    particleDensity={ 300 }
                     particleColor={ [ "#00FF00", "#800080", "#000000", "#FFC0CB" ] }
                     className="w-full h-full"
                 />

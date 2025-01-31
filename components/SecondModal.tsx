@@ -19,8 +19,8 @@ export function SecondModal ()
   return (
     <div className=" flex items-center justify-center">
       <Modal>
-        <ModalTrigger className=" dark:text-white text-black  flex justify-center group/modal-btn">
-          <span className="group-hover/modal-btn:translate-x-40 text-center text-lg md:text-2xl bg-white  p-10 rounded-xl rounded-r-full transition duration-200">
+        <ModalTrigger className=" dark:text-black text-black  flex justify-center group/modal-btn">
+          <span className="group-hover/modal-btn:translate-x-40 text-center text-lg md:text-2xl bg-white dark:text-black  p-10 rounded-xl rounded-r-full transition duration-200">
             پدافند <br />غیر عامل          </span>
           <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
             <Image src="/png/padlogo.png" alt="لوگو پدافند" width={ 40 } height={ 40 } />
@@ -56,43 +56,6 @@ export function SecondModal ()
               ) ) }
             </div>
             <div>
-              {/* <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
-              <div className="flex  items-center justify-center">
-                <PlaneIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  5 connecting flights
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <ElevatorIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  12 hotels
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <VacationIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  69 visiting spots
-                </span>
-              </div>
-              <div className="flex  items-center justify-center">
-                <FoodIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Good food everyday
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <MicIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Open Mic
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <ParachuteIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Paragliding
-                </span>
-              </div> */}
               <div className="-m-2 md:-m-4">
                 <Image src="/png/padcer.png" alt="مجوز پدافند" width={ 650 } height={ 500 } />
               </div>

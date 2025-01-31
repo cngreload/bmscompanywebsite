@@ -5,7 +5,7 @@ import Link from "next/link";
 const ClinicianText: React.FC = () =>
 {
     return (
-        <div className=" text-center lg:text-start">
+        <div className="text-center lg:text-start">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">کلینیکانز: آغار هوشمندانه سفر سلامت شما با استانداری طلایی
             </h2>
             <p className="text-lg text-gray-600 mb-8">در کلینیکنز دنیایی از امکانات پیشرفته و تجربه‌ای بی‌نظیر در انتظار شماست! <br /> اینجا، پلتفرمی جامع و هوشمند فراهم کرده‌ایم تا به راحتی بهترین خدمات سلامت و زیبایی شهر خود را پیدا کنید.

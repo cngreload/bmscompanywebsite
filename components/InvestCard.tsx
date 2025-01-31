@@ -32,7 +32,7 @@ export function CardSpotlightDemo ()
             {/* Contact Info */ }
             <a href="#email">
                 <p className="text-lg sm:text-xl md:text-2xl font-extrabold relative z-20 text-center mt-6">
-                    آغاز مکاتبه با ما:
+                    با ما همراه شوید:
                 </p>
 
                 <div className="flex justify-center mt-4 text-5xl sm:text-6xl text-purple-600">

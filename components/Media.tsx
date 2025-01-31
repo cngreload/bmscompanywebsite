@@ -175,7 +175,12 @@ const items = [
         icon: <FaPodcast className="h-4 w-4 text-neutral-500" />,
     },
     {
-        title: "مقاله جامعه شرکت",
+        title: (
+            <Link href="./interview">
+                مقاله جامعه شرکت
+            </Link>
+
+        ),
         description: (
             <Link href="./interview" className="text-sm">
                 مصاحبه متنی با مدیر عامل
