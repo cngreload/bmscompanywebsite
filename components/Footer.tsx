@@ -25,7 +25,7 @@ const Footer: React.FC = () =>
                         021-66463924
                     </p>
                     <Image
-                        src="/png/address.png" // Replace with your image path
+                        src="/svg/address.svg" // Replace with your image path
                         alt="نقشه"
                         width={ 300 } // Adjusted width for better fit
                         height={ 300 } // Adjusted height for better fit
@@ -42,7 +42,7 @@ const Footer: React.FC = () =>
                         021-66463924
                     </p>
                     <Image
-                        src="/png/address.png" // Replace with your image path
+                        src="/svg/address.svg" // Replace with your image path
                         alt="نقشه"
                         width={ 300 } // Adjusted width for better fit
                         height={ 300 } // Adjusted height for better fit
