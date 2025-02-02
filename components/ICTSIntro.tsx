@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { CardSpotlightDemo } from "./InvestCard";
-import Image from "next/image";
 
 const ICTSIntro: React.FC = () =>
 {
