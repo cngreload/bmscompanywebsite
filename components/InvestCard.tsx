@@ -1,10 +1,13 @@
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 import { MdAlternateEmail } from "react-icons/md";
-
+import Image from "next/image";
 export function CardSpotlightDemo ()
 {
     return (
         <CardSpotlight className="h-auto w-full max-w-md p-6 md:p-8 rounded-lg shadow-lg dark:bg-slate-50 dark:text-black  bg-white relative">
+            <div className="items-center justify-center p-4">
+                <Image src="/svg/ictshardware.svg" alt="سخت افزار ساامانه" width={ 300 } height={ 300 } />
+            </div>
             {/* Title */ }
             <q className="text-lg sm:text-xl md:text-2xl font-bold relative z-20 mt-2 text-black block text-center">
                 فرصت سرمایه گذاری

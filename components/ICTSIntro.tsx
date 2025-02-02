@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { CardSpotlightDemo } from "./InvestCard";
+import Image from "next/image";
 
 const ICTSIntro: React.FC = () =>
 {
@@ -39,6 +40,7 @@ const ICTSIntro: React.FC = () =>
             </div>
 
             {/* Card Section */ }
+
             <div className="flex-1 flex justify-center p-4">
                 <CardSpotlightDemo />
             </div>

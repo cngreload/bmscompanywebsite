@@ -3,9 +3,8 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { motion } from "framer-motion";
-import { FaPodcast, FaRegNewspaper } from "react-icons/fa";
-import { IoBookOutline } from "react-icons/io5";
-import Link from "next/link";
+import { FaRegNewspaper } from "react-icons/fa"; import Link from "next/link";
+import { GrGallery } from "react-icons/gr";
 
 export function BentoGridMedia ()
 {
@@ -163,36 +162,36 @@ const SkeletonThree = () =>
 const items = [
     {
         title: (
-            <Link className="text-3xl" href="./comic">
-                پادکست
+            <Link className=" text-sm lg:text-3xl" href="./interviewcto">
+                مصاحبه متنی
             </Link>
 
         ),
         description: (
-            <Link href="./comic" className="text-base">
-                روایت صوتی از داستان شرکت</Link> ),
+            <Link href="./interviewcto" className="text-sm">
+                روایت هم بنیان گزار از چالش های فنی تا کار با نیروی متخصص</Link> ),
         header: (
-            <Link href="./comic">
+            <Link href="./interviewcto">
                 <SkeletonThree />
             </Link>
         ),
         className: "md:col-span-1",
-        icon: <FaPodcast className="h-4 w-4 text-neutral-500" />,
+        icon: <FaRegNewspaper className="h-4 w-4 text-neutral-500" />,
     },
     {
         title: (
-            <Link href="./interview">
+            <Link href="./interviewceo">
                 مقاله جامعه شرکت
             </Link>
 
         ),
         description: (
-            <Link href="./interview" className="text-sm">
+            <Link href="./interviewceo" className="text-sm">
                 مصاحبه متنی با مدیر عامل
             </Link>
         ),
         header: (
-            <Link href="./interview">
+            <Link href="./interviewceo">
                 <SkeletonTwo />
             </Link>
         ),
@@ -202,13 +201,13 @@ const items = [
     {
         title: (
             <Link href="./comic">
-                کامیک
+                گالری
             </Link>
 
         ),
         description: (
             <Link href="./comic" className="text-sm">
-                داستان مصور سامانه هوشمند جایگاه سوخت سی ان جی            </Link>
+                شرکت به روایت تصویر            </Link>
         ),
         header: (
             <Link href="./comic">
@@ -216,6 +215,6 @@ const items = [
             </Link>
         ),
         className: "md:col-span-1",
-        icon: <IoBookOutline className="h-4 w-4 text-neutral-500" />,
+        icon: <GrGallery className="h-4 w-4 text-neutral-500" />,
     },
 ];

@@ -1,4 +1,5 @@
 'use client';
+import Image from "next/image";
 import React from "react";
 
 const VisionSection = () =>
@@ -17,7 +18,12 @@ const VisionSection = () =>
                     ما در بارمان محور اسپادانا پرورش دهنده چشم انداز تحقق رویای انسان مدرن برای زیر انگشت داشتن تمامی فعالیت های کسب و کار و املاک خود با دقت و امن، از هرنقطه و در هر لحظه بلادرنگ، می باشیم.
                     این نوید بخش عصر نوین هوشمندسازی و اتوماسیون در ساختار صنعت چهارم و ادغام آن در زندگی مردم می باشد.
                 </p>
+                <div className="items-center justify-center lg:pt-8">
+                    <Image src="/svg/futurevision.svg" alt="چشم انداز" width={ 900 } height={ 800 } />
+                </div>
             </div>
+
+
 
             {/* Feature Card */ }
             <div className="max-w-5xl mx-auto mt-16 bg-slate-400 rounded-2xl p-6 sm:p-8 flex flex-col space-y-6">

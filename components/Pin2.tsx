@@ -15,7 +15,7 @@ export function AnimatedPin2 ()
                     <div className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-center">
                         <span className="text-slate-500">
                             <Image
-                                src="/png/icts.png"
+                                src="/svg/ictssoftware.svg"
                                 alt="اتوماسیون هوشمند"
                                 width={ 1000 }
                                 height={ 1000 }
